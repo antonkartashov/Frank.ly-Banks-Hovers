@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Frank</title>
+    <style type="text/css">
+      * {
+      	margin: 0;
+      	padding: 0;
+      }
+      
+      .header {
+      	display: block;
+      	width: 100%; height: 300px;
+      	background-image: url(images/header.png);
+      	background-size: 1260px 300px;
+      	background-repeat: no-repeat;
+      	background-position: center;
+      }
+      
+      .banks {
+      	display: block;
+      	max-width: 935px;
+      	margin: auto;
+      	margin-bottom: 100px;
+      }
+      
+      .bank {
+      	display: inline-block;
+      	height: 140px; width: 140px;
+      	margin: 5px;
+      	border-radius: 30px;
+      	border: 1px solid rgba(0, 0, 0, .1);
+      	background-position: center;
+      	background-size: 120px 120px;
+      	background-repeat: no-repeat;
+      }
+      
+      .bank:hover {
+      	border: 1px solid rgba(0, 0, 0, 0.10);
+      	box-shadow: 0px 5px 16px 0px rgba(6,22,46,0.10);
+      	transform: scale(1.03, 1.03);
+      	transition: all .1s ease-in-out;
+      }
+      
+      .bank:active {
+      	background-color: rgba(0, 0, 0, .02);
+      	transform: scale(1, 1);
+      	box-shadow: none;
+      	transition: all 0.05s ease-in-out;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="header"></div>
+    <div class="banks">
+      <div style="background-image: url(images/chase.png)" class="bank"></div>
+      <div style="background-image: url(images/americanexpress.png)" class="bank"></div>
+      <div style="background-image: url(images/bankofamerica.png)" class="bank"></div>
+      <div style="background-image: url(images/charlesschwab.png)" class="bank"></div>
+      <div style="background-image: url(images/svb.png)" class="bank"></div>
+      <div style="background-image: url(images/usbank.png)" class="bank"></div>
+      <div style="background-image: url(images/bbva.png)" class="bank"></div>
+      <div style="background-image: url(images/citi.png)" class="bank"></div>
+      <div style="background-image: url(images/wellsfargo.png)" class="bank"></div>
+      <div style="background-image: url(images/capitalone.png)" class="bank"></div>
+      <div style="background-image: url(images/fidelity.png)" class="bank"></div>
+      <div style="background-image: url(images/newrecource.png)" class="bank"></div>
+      <div style="background-image: url(images/pnc.png)" class="bank"></div>
+      <div style="background-image: url(images/amalgamated.png)" class="bank"></div>
+    </div>
+  </body>
+</html>
