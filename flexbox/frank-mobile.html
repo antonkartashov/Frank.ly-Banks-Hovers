@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			h1, h2, p {text-align: center;}
+			p strong {font-weight: 500;}
+
+			p {
+				font: 400 15pt/20pt 'Graphik', 'Helvetica Neue';
+				margin: 0 40px;
+				opacity: .3;
+			}
+
+			h1 {
+				font: 500 30pt/30pt 'Graphik', 'Helvetica Neue';
+				letter-spacing: -1.25px;
+				vertical-align:;
+			}
+
+			h2 {
+				font: 300 20pt/24pt 'Graphik', 'Helvetica Neue';
+			}
+
+			@media screen and (min-height: 500px) {
+				.container {
+					background-color: rgba(255, 0, 0, .2);
+					display: flex;
+					flex-direction: column;
+					height: 100vh;
+					y-justify-content: space-around;
+	    			y-align-items: stretch;
+				}
+
+				.content {
+					background-color: rgba(0, 255, 0, .2);
+					flex: 1;
+					display: flex;
+					width: 480px;
+					margin: auto;
+					align-items: center;
+					justify-content: center;
+				}
+
+				.text {
+					background-color: rgba(255, 255, 255, .3);
+					width: 85%;
+				}
+
+				.footer {
+					background-color: rgba(0, 255, 255, .3);
+					flex: 0 0 auto;
+					width: 480px;
+					margin: auto;
+					margin-bottom: 25px;
+				}
+			}
+
+			@media screen and (max-height: 500px) {
+				.container {
+					background-color: rgba(255, 0, 255, .2);
+					display: flex;
+					flex-direction: column;
+					height: 500px;
+					y-justify-content: space-around;
+	    			y-align-items: stretch;
+				}
+
+				.content {
+					background-color: rgba(0, 255, 0, .2);
+					flex: 1;
+					display: flex;
+					width: 480px;
+					margin: auto;
+					align-items: center;
+					justify-content: center;
+				}
+
+				.text {
+					background-color: rgba(255, 255, 255, .3);
+					width: 85%;
+				}
+
+				.footer {
+					background-color: rgba(0, 255, 255, .3);
+					flex: 0 0 auto;
+					width: 480px;
+					margin: auto;
+					margin-bottom: 25px;
+				}
+			}
+		</style>
+	</head>
+
+
+
+	<body>
+		<div class="container">
+			
+			<div class="content">
+				<div class="text">
+					<h1>Welcome to Frank</h1>
+					<h2>We’re honored with the opportunity to help you make
+					your bank account transparent</h2>
+				</div>
+			</div>
+			
+			<div class="footer">
+				<p><strong>Learn more</strong> about the process of opening Frank account for your cause,
+				and get the list of information you will need to do it</div>
+		</div>
+
+
+
+		<div style="position: absolute; top: 0; left: 0">
+			<h2 id="height" style="margin: 20px">x<h2>
+		</div>
+
+		<script>
+			div = document.getElementById("height");
+			div.innerHTML = window.innerHeight + " px";
+			
+			window.onresize = function() {
+				div.innerHTML = window.innerHeight + " px";
+			}
+		</script>
+
+	</body>
+</html>
